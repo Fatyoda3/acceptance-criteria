@@ -51,6 +51,8 @@ So that I can create a session for others to join
 * **When** I select host game option<br>
 * **Then** Then I am taken to a lobby with a generated room ID
 
+---
+
 ## Story 2: Join game
 
 As a player<br>
@@ -204,46 +206,121 @@ So that I can begin gameplay
 
 # Player turn
 
-- # Afflictions
+# Afflictions
+---
 
-    ## Story 1: normal affliction
+- ## Story 1: normal affliction
+
+As a player<br>
+I want to play normal affliction card on an opponent with the organ mentioned on the card<br>
+So that I can afflict chosen opponent's specific organ mentioned on the card
+
+### Acceptance criteria
+
+* **Given** I play the card<br>
+  **When**It is not blocked<br>
+  **Then** Opponents organ will sustain damage
+---
+
+* **Given** I play the card <br>
+  **When**It is not blocked<br>
+  **Then** Opponents organ will sustain damage
+---
+
+- ## Story 2: remove affliction 
+
+As a player<br>
+I want to play remove affliction card on an opponent with the organ mentioned on the card<br>
+So that I can remove chosen opponent's specific organ mentioned on the card
+
+- ## Story 3: Hybrid affliction
+
+As a player<br>
+I want to play hybrid affliction card on an opponent with the organ mentioned on the card<br>
+So that I can choose to remove or afflict chosen opponent' specific organ mentioned on the card
+
+- ## Story 4: Wild affliction
+
+As a player<br>
+I want to play wild affliction card on any opponent<br>
+So that I afflict any organ of my choice of the chosen opponent
+
+- ## Story 5: Necrosis
+
+As a player<br>
+I want to play necrosis card on any opponent<br>
+So that I remove any organ of my choice of the chosen opponent
+
+- ## Story 5: Contagious
+
+As an attacked player<br>
+I want to play contagious card on the any opponent<br>
+So that I afflict their organ of my choice of the chosen opponent
+
+- ## Story 6: Metastasis
+
+As a attacking player<br>
+I want to play metastasis card on the same opponent, whom i played an affliction on<br>
+So that I afflict another organ of my choice of the opponent
+
+- # Cure
+
+    - ## Story 1: Medicine
+
+    As an already afflicted player<br>
+    I want to play medicine card on one of my afflicted organ<br>
+    So that I can increase the health of the chosen organ by 1
+
+  - ## Story 2: Medical miracle
+
+    As an already afflicted player<br>
+    I want to play medical miracle card on one or two of my afflicted organ(s)<br>
+    So that I can increase the health of the chosen organ(s) by 1/2 
+
+- # Sleep
+
+    - ## Story 1: Sedate
 
     As a player<br>
-    I want to play normal affliction card on an opponent with the organ mentioned on the card<br>
-    So that I can afflict chosen opponent's specific organ mentioned on the card
+    I want to play sedate card on any opponent<br>
+    So that I can make them sleep and skip their turns for the next 2 turns
 
-    ## Story 2: remove affliction 
-
-    As a player<br>
-    I want to play remove affliction card on an opponent with the organ mentioned on the card<br>
-    So that I can remove chosen opponent's specific organ mentioned on the card
-
-    ## Story 3: Hybrid affliction
+    - ## Story 2: Narcolepsy
 
     As a player<br>
-    I want to play hybrid affliction card on an opponent with the organ mentioned on the card<br>
-    So that I can choose to remove or afflict chosen opponent' specific organ mentioned on the card
+    I want to play narcolepsy card on any opponent<br>
+    So that I can make them sleep and skip their next turn
 
-    ## Story 4: Wild affliction
+- # Bureaucracy
 
-    As a player<br>
-    I want to play wild affliction card on any opponent<br>
-    So that I afflict any organ of my choice of the chosen opponent
-
-    ## Story 5: Necrosis
+    - ## Story 1: Research
 
     As a player<br>
-    I want to play necrosis card on any opponent<br>
-    So that I remove any organ of my choice of the chosen opponent
+    I want to play research card<br>
+    So that I can take a card from the discard pile of my choice
 
-    ## Story 5: Contagious
+    - ## Story 2: Clinical audit
 
-    As a an attacked player<br>
-    I want to play contagious card on the any opponent<br>
-    So that I afflict their organ of my choice of the chosen opponent
+    As a player<br>
+    I want to play clinical audit card<br>
+    So that I can discard a card of my choice from each opponent's hand
 
-    ## Story 6: Metastasis
+    - ## Story 3: By the book
 
-    As a attacking player<br>
-    I want to play metastasis card on the same opponent, whom i played an affliction on<br>
-    So that I afflict another organ of my choice of the opponent
+    As a player<br>
+    I want to play the by the book card<br>
+    So that I can make every player including myself to discard all non-normal-affliction cards
+
+- # One-time playable cards
+
+    - ## Story 1: It's alive
+
+    As a player who lost an organ(s)<br>
+    I want to play it's alive card<br>
+    So that I can reanimate a lost organ card of mine according to my choice
+
+    - ## Story 2: Transplant
+
+    As a player<br>
+    I want to play transplant card<br>
+    So that I can take any one organ card from any of my one opponents according to my choice
