@@ -185,8 +185,8 @@ So that I can exit the current game session
 
 ## Story 1: Card Distribution
 
-As a player
-I want to receive 
+As a player<br>
+I want to receive<br> 
 So that I can begin gameplay
 
 ### Acceptance criteria
@@ -222,13 +222,16 @@ So that I can afflict chosen opponent's specific organ mentioned on the card
 ### Acceptance criteria
 
 * **Given** I play the card<br>
-  **When**It is not blocked<br>
-  **Then** Opponents organ will sustain damage
+* **When**It is not blocked<br>
+* **Then** Opponents organ will sustain damage 
 ---
-
 * **Given** I play the card <br>
-  **When**It is not blocked<br>
-  **Then** Opponents organ will sustain damage
+*  **When**It is blocked<br>
+*  **Then** Opponents organ will sustain no damage, 
+---
+* **Given** opponent has vaccine  <br>
+*  **When** I play the card<br>
+*  **Then** Opponents organ will sustain no damage, and the vaccine will lose a point
 ---
 
 - ## Story 2: remove affliction 
