@@ -202,3 +202,48 @@ So that I can begin gameplay
   **Then**game starts 
 ---
 
+# Player turn
+
+- # Afflictions
+
+    ## Story 1: normal affliction
+
+    As a player<br>
+    I want to play normal affliction card on an opponent with the organ mentioned on the card<br>
+    So that I can afflict chosen opponent's specific organ mentioned on the card
+
+    ## Story 2: remove affliction 
+
+    As a player<br>
+    I want to play remove affliction card on an opponent with the organ mentioned on the card<br>
+    So that I can remove chosen opponent's specific organ mentioned on the card
+
+    ## Story 3: Hybrid affliction
+
+    As a player<br>
+    I want to play hybrid affliction card on an opponent with the organ mentioned on the card<br>
+    So that I can choose to remove or afflict chosen opponent' specific organ mentioned on the card
+
+    ## Story 4: Wild affliction
+
+    As a player<br>
+    I want to play wild affliction card on any opponent<br>
+    So that I afflict any organ of my choice of the chosen opponent
+
+    ## Story 5: Necrosis
+
+    As a player<br>
+    I want to play necrosis card on any opponent<br>
+    So that I remove any organ of my choice of the chosen opponent
+
+    ## Story 5: Contagious
+
+    As a an attacked player<br>
+    I want to play contagious card on the any opponent<br>
+    So that I afflict their organ of my choice of the chosen opponent
+
+    ## Story 6: Metastasis
+
+    As a attacking player<br>
+    I want to play metastasis card on the same opponent, whom i played an affliction on<br>
+    So that I afflict another organ of my choice of the opponent
