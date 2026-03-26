@@ -21,8 +21,8 @@ So that I can access my progress and play the game
   **Then** I see a validation message prompting me to fill in the required fields<br>
 
 * **Given** I am logged in<br>
-  **When** I relaunch the game within a short session period<br>
-  **Then** I remain logged in and do not need to enter credentials again
+  **When** I relaunch the game within a short  period of time  after exiting the earlier the game page<br>
+  **Then** I remain logged in and my credentials must persist 
 
 ---
 
@@ -38,7 +38,7 @@ So that I can play with my friends
 
 * **Given** I am on the main-menu<br>
   **When** I select host game option<br>
-  **Then** I move to waiting lobby with a room-id
+  **Then** I move to waiting lobby with a room-id that can be share with friends
 
 ## Story 2:
 
@@ -66,25 +66,29 @@ So that I can play with my friends
 
 * **Given** I select join game option<br>
   **When** No games are hosted<br>
-  **Then** I see a prompt indicating no rooms are hosted
+  **Then** I see a prompt indicating no rooms are hosted try hosting room
 
 * **Given** I select join game option<br>
-  **When** I enter a valid room-id that is full<br>
-  **Then** I see a prompt indicating room full<br>
+  **When** I enter a valid room-id that is full <br>
+  **Then** I see a prompt indicating room full host or try another room <br>
 
 ## Story 3:
 
 As a player<br>
 I want to know the rules and description of the game<br>
-So that I can play the game appropiately
+So that I can play the game appropriately
 
 ### Acceptance criteria
-
+---
 * **Given** I am on the main-menu<br>
-  **When** I select about game option<br>
-  **Then** I see rules and description of the game
+  **When** I select about the game option<br>
+  **Then** I see the rules and description of the game
+  ---
+* **Given** I am in a game session<br>
+  **When** I want to refer some rule <br>
+  **Then** I should see be able to see the rules and game description page of the game
 
-# Lobby-management
+#  Lobby-management
 
 ## Story 1: View players in lobby
 
@@ -97,10 +101,33 @@ So that I know who I will be playing with
 * **Given** I am in the waiting lobby<br>
 * **When** players join or leave<br>
 * **Then** I see the updated list of players in real-time<br>
-
+* **Given** I am in the waiting lobby<br>
+* **When** players join or leave<br>
+* **Then** I see details like name of who joined and/or left the lobby <br>
+---
 * **Given** I am in the waiting lobby<br>
 * **When** I view the player list<br>
 * **Then** I see player names and host indication<br>
+
+---
+* **Given** I am in the waiting lobby<br>
+* **When** there are no other players <br>
+* **Then** I should see waiting for other players
+--- 
+* **Given** I am in the waiting lobby<br>
+* **When** a player joins <br>
+* **Then** I should see start game
+ --- 
+
+* **Given** I am in the waiting lobby<br>
+* **When** a player joins <br>
+* **Then** I should see updated player count and the waiting for other players should go away
+ --- 
+* **Given** I am in the waiting lobby<br>
+* **When** I waited for too long <br>
+* **Then** I should be able to leave the current lobby
+ --- 
+
 
 ## Story 2: Start game (Host only)
 
