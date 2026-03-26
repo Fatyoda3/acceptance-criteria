@@ -38,10 +38,14 @@ So that I can securely exit my account
 ---
 
 # Main-menu
+## Story 1a: Profile Icon
+  As a logged in player<br>
+  I want to see my profile icon and username<br>
+  So that I can confirm my username and share with other players 
 
-## Story 1: Host game
+## Story 1b: Host game
 
-As a player<br>
+As a logged in player<br>
 I want to host a game<br>
 So that I can create a session for others to join
 
@@ -55,7 +59,7 @@ So that I can create a session for others to join
 
 ## Story 2: Join game
 
-As a player<br>
+As a logged in player<br>
 I want to join a game<br>
 So that I can play with others
 
@@ -87,7 +91,7 @@ So that I can play with others
 ---
 ## Story 3: About game and rules
 
-As a player<br>
+As a logged in player<br>
 I want to know the rules and description of the game<br>
 So that I can play the game appropriately
 
